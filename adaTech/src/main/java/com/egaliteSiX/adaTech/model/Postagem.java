@@ -2,7 +2,7 @@ package com.egaliteSiX.adaTech.model;
 
 
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,7 +12,11 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 
 @Entity
@@ -37,7 +41,10 @@ public class Postagem {
     @Size(min = 5, max = 500)
     private String midia; 
 
-
+    @ManyToOne 
+    @JsonIgnoreProperties("postagem")
+    private Tema tema;
+    
     public long getId() {
         return this.id;
     }
@@ -78,5 +85,14 @@ public class Postagem {
         this.midia = midia;
     }
 
+	public Tema getTema() {
+		return tema;
+	}
+
+	public void setTema(Tema tema) {
+		this.tema = tema;
+	}
+    
+    
 
 }
