@@ -1,6 +1,5 @@
 package com.egaliteSiX.beequalite.controller;
 
-import java.util.Date;
 import java.util.List;
 
 import com.egaliteSiX.beequalite.model.Postagem;
