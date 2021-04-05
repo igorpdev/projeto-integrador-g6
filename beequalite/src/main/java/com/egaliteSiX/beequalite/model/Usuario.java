@@ -34,7 +34,7 @@ public class Usuario {
     @Size(max = 30)
     private String senha;
 
-    @OneToMany(mappedBy = "postagem", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
     @JsonIgnoreProperties("usuario")
     private List<Postagem> postagem;
 
@@ -77,5 +77,5 @@ public class Usuario {
     public void setPostagem(List<Postagem> postagem) {
         this.postagem = postagem;
     }
-
+    
 }

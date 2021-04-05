@@ -8,6 +8,7 @@ import com.egaliteSiX.beequalite.repository.UsuarioRepository;
 import com.egaliteSiX.beequalite.service.UsuarioService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -44,6 +45,11 @@ public class UsuarioController {
     public ResponseEntity<List<Usuario>> getByNome(@PathVariable String nome) {
         return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
     }
+
+    //@PostMapping
+    //public ResponseEntity<Usuario> post(@RequestBody Usuario usuario) {
+     //   return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(usuario));
+    //}
 
     @PostMapping("/cadastro")
     public ResponseEntity<Usuario> post(@RequestBody Usuario usuario) {
