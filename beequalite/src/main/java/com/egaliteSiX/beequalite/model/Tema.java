@@ -1,4 +1,4 @@
-package com.egaliteSiX.adaTech.model;
+package com.egaliteSiX.beequalite.model;
 
 import java.util.List;
 

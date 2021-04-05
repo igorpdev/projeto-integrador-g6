@@ -1,4 +1,4 @@
-package com.egaliteSiX.adaTech;
+package com.egaliteSiX.beequalite;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

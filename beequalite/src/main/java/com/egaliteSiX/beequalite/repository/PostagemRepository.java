@@ -1,8 +1,8 @@
-package com.egaliteSiX.adaTech.repository;
+package com.egaliteSiX.beequalite.repository;
 
 import java.util.List;
 
-import com.egaliteSiX.adaTech.model.Postagem;
+import com.egaliteSiX.beequalite.model.Postagem;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
