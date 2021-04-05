@@ -1,5 +1,6 @@
 package com.egaliteSiX.beequalite.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import com.egaliteSiX.beequalite.model.Postagem;
@@ -39,6 +40,16 @@ public class PostagemController {
     @GetMapping("/titulo/{titulo}")
     public ResponseEntity <List<Postagem>> getByTitulo(@PathVariable String titulo) {
         return ResponseEntity.ok(repository.findAllByTituloContainingIgnoreCase(titulo));
+    }
+
+    @GetMapping("/texto/{texto}")
+    public ResponseEntity<List<Postagem>> getByTexto(@PathVariable String texto) {
+        return ResponseEntity.ok(repository.findAllByTextoContainingIgnoreCase(texto));
+    }
+
+    @GetMapping("/data/{data}")
+    public ResponseEntity <List<Postagem>> getByData(@PathVariable String data) {
+        return ResponseEntity.ok(repository.findAllByDataContaining(data));
     }
 
     @PostMapping
