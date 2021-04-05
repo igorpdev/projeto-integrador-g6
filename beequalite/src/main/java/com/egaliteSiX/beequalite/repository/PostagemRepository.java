@@ -15,11 +15,6 @@ public interface PostagemRepository extends JpaRepository<Postagem, Long> {
 
     public List<Postagem> findAllByTextoContainingIgnoreCase (String texto);
 
-    //public List<Postagem> findAllByDataContaining (Date data);
-
-    //@Query("select a from tb_postagem where tb_postagem.data <= :data")
-    //public List<Postagem> findAllByDataContaining(@Param("data") Date data);
-
     @Query(value ="SELECT * FROM tb_postagem where CAST(data AS DATE) = :data", nativeQuery = true)
     public List<Postagem> findAllByDataContaining(@Param("data") String data);
 }
