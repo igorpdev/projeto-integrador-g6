@@ -1,6 +1,7 @@
 package com.egaliteSiX.beequalite.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.egaliteSiX.beequalite.model.Usuario;
 
@@ -13,5 +14,5 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     
     public List<Usuario> findAllByNomeContainingIgnoreCase(String nome);
 
-    public List<Usuario> findAllByEmailContainingIgnoreCase(String email);
+    public Optional<Usuario> findAllByEmailContainingIgnoreCase(String email);
 }
