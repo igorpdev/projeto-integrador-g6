@@ -3,6 +3,7 @@ package com.egaliteSiX.beequalite.controller;
 import java.util.List;
 import java.util.Optional;
 
+import com.egaliteSiX.beequalite.model.UserLogin;
 import com.egaliteSiX.beequalite.model.Usuario;
 import com.egaliteSiX.beequalite.repository.UsuarioRepository;
 import com.egaliteSiX.beequalite.service.UsuarioService;
@@ -31,20 +32,18 @@ public class UsuarioController {
     @Autowired 
     private UsuarioService service;
 
-    @GetMapping
-    public ResponseEntity<List<Usuario>> getAll() {
-        return ResponseEntity.ok(repository.findAll());
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<Usuario> getById(@PathVariable long id) {
-        return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
-    }
-
-    @GetMapping("/nome/{nome}")
-    public ResponseEntity<List<Usuario>> getByNome(@PathVariable String nome) {
-        return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
-    }
+	/*
+	 * @GetMapping public ResponseEntity<List<Usuario>> getAll() { return
+	 * ResponseEntity.ok(repository.findAll()); }
+	 * 
+	 * @GetMapping("/{id}") public ResponseEntity<Usuario> getById(@PathVariable
+	 * long id) { return repository.findById(id).map(resp ->
+	 * ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build()); }
+	 * 
+	 * @GetMapping("/nome/{nome}") public ResponseEntity<Optional<Usuario>>
+	 * getByNome(@PathVariable String nome) { return
+	 * ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome)); }
+	 */
 
     //@PostMapping
     //public ResponseEntity<Usuario> post(@RequestBody Usuario usuario) {
@@ -61,15 +60,19 @@ public class UsuarioController {
             return ResponseEntity.badRequest().build();
         }
     }
-
-    @PutMapping
-    public ResponseEntity<Usuario> put(@RequestBody Usuario usuario) {
-        return ResponseEntity.ok(repository.save(usuario));
+    
+    @PostMapping("/login")
+    public ResponseEntity<UserLogin> Autentication(@RequestBody Optional<UserLogin> user){
+    	return service.Login(user).map(resp -> ResponseEntity.ok(resp))
+    	.orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).build());
     }
 
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable long id) {
-        repository.deleteById(id);
-    }
+	/*
+	 * @PutMapping public ResponseEntity<Usuario> put(@RequestBody Usuario usuario)
+	 * { return ResponseEntity.ok(repository.save(usuario)); }
+	 * 
+	 * @DeleteMapping("/{id}") public void delete(@PathVariable long id) {
+	 * repository.deleteById(id); }
+	 */
 
 }
