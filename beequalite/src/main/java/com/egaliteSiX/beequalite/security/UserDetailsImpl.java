@@ -17,8 +17,8 @@ public class UserDetailsImpl implements UserDetails {
 	private List<GrantedAuthority> authorities;
 	
 	public UserDetailsImpl(Usuario user) {
-		this.username = username;
-		this.password = password;
+		this.username = user.getEmail();
+		this.password = user.getSenha();
 	}
 
 	public UserDetailsImpl() {
@@ -65,6 +65,5 @@ public class UserDetailsImpl implements UserDetails {
 		// TODO Auto-generated method stub
 		return true;
 	}
-	
 
 }
