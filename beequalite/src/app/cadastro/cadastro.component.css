@@ -1,0 +1,75 @@
+.bg-color {
+    background-color: #181829;
+}
+
+.caixa-form {
+    background-color: #242434;
+    margin: 20px;
+    margin-top: 9px;
+    margin-bottom: 40px;
+    padding: 30px;
+    padding-top: 25px;
+    border-radius: 15px;
+    height: 480px;
+}
+
+.titulo {
+    padding-left: 20;
+    margin-top: 60px;
+    color: #FFC62A;
+    font-family: 'Righteous', sans-serif;
+}
+
+.texto {
+    color: #FFC62A;
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: 'Righteous', sans-serif;
+}
+
+.texto-menor {
+    color: #FFC62A;
+    font-size: 16px;
+    font-family: 'Righteous', sans-serif;
+}
+
+input[type=text] {
+    border-radius: 25px;
+    border: 2px solid #FFC62A;
+    background-color: #242434;
+    font-family: 'Righteous', sans-serif;
+}
+
+input[type=email] {
+    border-radius: 25px;
+    border: 2px solid #FFC62A;
+    background-color: #242434;
+    font-family: 'Righteous', sans-serif;
+}
+
+input[type=password] {
+    border-radius: 25px;
+    border: 2px solid #FFC62A;
+    background-color: #242434;
+    font-family: 'Righteous', sans-serif;
+}
+
+::placeholder {
+    padding-left: 5px;
+}
+
+.btn {
+    background-color: #FFC62A;
+    border-radius: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Righteous', sans-serif;
+}
+
+a {
+    text-decoration: underline;
+    color: #FFC62A;
+}
