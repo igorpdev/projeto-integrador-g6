@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { InspireComponent } from './inspire/inspire.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SobreComponent } from './sobre/sobre.component';
     MenuComponent,
     FooterComponent,
     CadastroComponent,
-    SobreComponent
+    SobreComponent,
+    InspireComponent
   ],
   imports: [
     BrowserModule,
