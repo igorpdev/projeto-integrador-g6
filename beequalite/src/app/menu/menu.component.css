@@ -1,16 +1,27 @@
-  
 .fs-16{
-    font-size: 16pt;
-  }
+  font-size: 16pt;
+}
 
-  a{
-    cursor: pointer;
-  }
+a {
+  cursor: pointer;
+}
 
-  .bg-color{
-    background-color: #181829;
-  }
+.bg-color{
+  background-color: #11111d;
+}
 
-  .font{
-    color: #ffc62a;
-  }
+.fc-principal {
+  color: #FFC62A;
+}
+
+.ff-principal {
+  font-family: 'Righteous', sans-serif;;
+}
+
+ul li a {
+  color: #FFC62A;
+}
+
+ul li a:hover {
+  color: white;
+}
