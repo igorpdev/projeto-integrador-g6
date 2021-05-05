@@ -10,7 +10,7 @@
     padding: 30px;
     padding-top: 25px;
     border-radius: 15px;
-    height: 480px;
+    height: 650px;
 }
 
 .titulo {
@@ -54,8 +54,22 @@ input[type=password] {
     font-family: 'Righteous', sans-serif;
 }
 
-::placeholder {
-    padding-left: 5px;
+select {
+  border-radius: 25px;
+  border: 2px solid #FFC62A;
+  background-color: #242434;
+  font-family: 'Righteous', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select:focus {
+  border-radius: 25px;
+  border: 2px solid #FFC62A;
+  background-color: #242434;
+  font-family: 'Righteous', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .btn {
