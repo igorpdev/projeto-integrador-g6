@@ -1,0 +1,19 @@
+.bg-color{
+    background-color: #181829;
+  }
+
+.font{
+    color: #ffc62a;
+    font-size: 20pt;
+  }
+
+.bg-container {
+    background-color: #c4c4c4;
+    opacity: 7%;
+}
+
+.font-texto{
+    color:black;
+    font-size: 15pt;
+    font-family: 'ubuntu';
+}

@@ -1,0 +1,85 @@
+.bg-principal {
+  background-color: #181829;
+}
+
+.bg-secundaria {
+  background-color: #242434;
+}
+
+.fc-principal {
+  color: #FFC62A;
+}
+
+.fc-secundaria {
+  color: #FFEB99;
+}
+
+.ff-principal {
+  font-family: 'Righteous', sans-serif;;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.caixa {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.caixa2 {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 500px;
+  width: 800px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+
+.caixa3 {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 2420px;
+  width: 800px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+}
+
+a {
+  cursor: pointer;
+}
+
+ul.contato {
+  list-style: none;
+  padding: 0;
+}
+
+.fab {
+  font-size: 30pt;
+  color: #0e76a8;
+  padding: 10px;
+}
+
+.fa-linkedin:hover {
+  color: #FFC62A;
+}
+
+.mt-7 {
+  margin-top: 7.5rem;
+}
+
+.ml-6 {
+  margin-left: 6.5rem;
+}
+
+.ml-9 {
+  margin-left: 9rem;
+}
