@@ -14,15 +14,15 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UsuarioService {
-    
+
     @Autowired
     public UsuarioRepository repository;
-    
+
     public Optional<Usuario> CadastroUsuario(Usuario usuario) {
     	if (repository.findByEmail(usuario.getEmail()).isPresent()) {
     		return null;
     	}
-  
+
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
         String senhaEncoder = encoder.encode(usuario.getSenha());
@@ -30,24 +30,26 @@ public class UsuarioService {
 
         return Optional.of(repository.save(usuario));
     }
-    
+
     public Optional <UserLogin> Login(Optional <UserLogin> user){
-    	
+
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder ();
 		Optional<Usuario> usuario = repository.findByEmail(user.get().getEmail());
-    		
+
 		if (usuario.isPresent()) {
-    			
+
 			if (encoder.matches(user.get().getSenha(), usuario.get().getSenha())) {
-    				
+
 				String auth = user.get().getEmail() + ":" + user.get().getSenha();
     			byte[] encodedAuth = Base64.encodeBase64(auth.getBytes(Charset.forName("US-ASCII")));
     			String authHeader = "Basic " + new String(encodedAuth);
-    					
+
     			user.get().setToken(authHeader);
-    			user.get().setEmail(usuario.get().getEmail());
-    			user.get().setSenha(user.get().getSenha());
-    					
+    			user.get().setId(usuario.get().getId());
+    			user.get().setNome(user.get().getNome());
+          user.get().setFoto(user.get().getFoto());
+          user.get().setTipo(user.get().getTipo());
+
     			return user;
     			}
     		}

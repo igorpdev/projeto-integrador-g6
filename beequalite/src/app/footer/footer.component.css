@@ -1,4 +1,11 @@
 .bg-footer {
-    background: #c4c4c4;
-    opacity: 0.7;
+  background-color: #11111d;
+}
+
+.fc-principal {
+  color: #FFC62A;
+}
+
+.ff-principal {
+  font-family: 'Righteous', sans-serif;;
 }
