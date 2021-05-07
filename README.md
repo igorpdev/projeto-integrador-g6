@@ -17,10 +17,17 @@
  <a href="#-orientadores">Orientadores</a> 
 </p>
 
-## 📄 Sobre o Projeto
+## 📄 Sobre o Projeto 🐝
 <p align="center"> 
-	🐝 BEEqualité é uma rede social 
-</p>
+	🐝 BEEqualité é uma rede social criada para desenvolver e inserir mulheres no mercado tecnológico, que foi observado na quinta ODS da Onu, sobre igualdade de gênero e mapeado no mercado que mulheres no mercado tecnológico são minoria, e as que estão nesse mercado passa por situações de exclusão, por isso nascemos nosso  intuito é mostrar que essa área é para você!
+	</p>
+<p align="center"> 
+	🐝Temos uma parte de networking para se comunicar e se inteirar sobre as novidades desse mercado como cursos, palestras, workshops e indicações de vagas, possibilitando você falar com mulheres do mundo inteiro que estão passando pelo mesmo que você.
+Além da nossa aba de Inspira-se com casos reais de mulheres que estão vencendo nesse mercado! 
+	</p>
+<h2 align="center"> 
+                Faça a diferença junto com a gente!
+	</h2>
 
 
 ## ⚙️ Funcionalidades
@@ -42,6 +49,8 @@
 ## 🎨 Layout
 
 O layout da aplicação está disponível no Figma:
+[Propótipo Navegável](https://www.figma.com/file/lTrG1GwDC94aPFEuSQtWkX/BEEqualit%C3%A9)
+
 
 
 
