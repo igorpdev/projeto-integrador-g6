@@ -13,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { InspireComponent } from './inspire/inspire.component';
 import { TemaGetPostComponent } from './tema-get-post/tema-get-post.component';
 import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { TemaComponent } from './tema/tema.component';
     LoginComponent,
     InspireComponent,
     TemaGetPostComponent,
-    TemaComponent
+    TemaComponent,
+    TemaEditComponent,
+    TemaDeleteComponent
   ],
   imports: [
     BrowserModule,
