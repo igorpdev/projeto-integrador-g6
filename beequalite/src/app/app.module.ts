@@ -11,6 +11,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { LoginComponent } from './login/login.component';
 import { InspireComponent } from './inspire/inspire.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { InspireComponent } from './inspire/inspire.component';
     CadastroComponent,
     SobreComponent,
     LoginComponent,
-    InspireComponent
+    InspireComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
