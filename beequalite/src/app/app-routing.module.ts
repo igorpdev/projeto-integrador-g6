@@ -4,13 +4,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 const routes: Routes = [
+  
   {path: '', component: CadastroComponent, pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'cadastro', component: CadastroComponent},
   {path: 'sobre', component: SobreComponent},
-  {path: 'inspire-se', component: InspireComponent}
+  {path: 'inspire-se', component: InspireComponent},
+  {path: 'tema', component: TemaComponent},
+  {path: 'tema-edit/:id', component: TemaEditComponent},
+  {path: 'tema-delete/id:', component: TemaDeleteComponent}
+  
 ];
 
 @NgModule({
