@@ -1,0 +1,46 @@
+.bg-principal {
+  background-color: #181829;
+  width: 100%;
+}
+
+.bg-secundaria {
+  background-color: #242434;
+}
+
+.fc-principal {
+  color: #FFC62A;
+}
+
+.fc-secundaria {
+  color: #FFEB99;
+}
+
+.ff-principal {
+  font-family: 'Righteous', sans-serif;;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.caixa1 {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 400px;
+  width: 15%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.caixa2 {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 400px;
+  width: 60%;
+  display: flex;
+  margin-bottom: 20px;
+}

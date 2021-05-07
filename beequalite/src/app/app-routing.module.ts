@@ -1,3 +1,4 @@
+import { HomeComponent } from './home/home.component';
 import { InspireComponent } from './inspire/inspire.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -14,10 +15,7 @@ const routes: Routes = [
   {path: 'cadastro', component: CadastroComponent},
   {path: 'sobre', component: SobreComponent},
   {path: 'inspire-se', component: InspireComponent},
-  {path: 'tema', component: TemaComponent},
-  {path: 'tema-edit/:id', component: TemaEditComponent},
-  {path: 'tema-delete/id:', component: TemaDeleteComponent}
-  
+  {path: 'home', component: HomeComponent}
 ];
 
 @NgModule({
