@@ -15,7 +15,10 @@ const routes: Routes = [
   {path: 'cadastro', component: CadastroComponent},
   {path: 'sobre', component: SobreComponent},
   {path: 'inspire-se', component: InspireComponent},
-  {path: 'home', component: HomeComponent}
+  {path: 'home', component: HomeComponent},
+  {path: 'tema', component: TemaComponent},
+  {path: 'tema-edit/:id', component: TemaEditComponent},
+  {path: 'tema-delete/:id', component: TemaDeleteComponent}
 ];
 
 @NgModule({
