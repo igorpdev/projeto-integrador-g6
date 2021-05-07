@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes = [
-  {path: '', component: CadastroComponent, pathMatch: 'full'},
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'cadastro', component: CadastroComponent},
   {path: 'sobre', component: SobreComponent},

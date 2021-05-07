@@ -12,13 +12,13 @@ import { AuthService } from '../service/auth.service';
 export class LoginComponent implements OnInit {
 
   userLogin: UserLogin = new UserLogin()
+
   constructor(
     private auth: AuthService,
     private router: Router
   ) { }
 
   ngOnInit() {
-
     window.scroll(0,0)
   }
 
@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
       environment.foto = this.userLogin.foto
       environment.id = this.userLogin.id
 
-      this.router.navigate(['/inicio'])
+      this.router.navigate(['/inspire-se'])
     }, erro =>{
       if(erro.status == 500){
         alert('Usuário ou senha estão incorretos!')
