@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
-import { environment } from './../../environments/environment.prod';
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  foto = environment.token
+  foto = environment.foto
   nome = environment.nome
 
   constructor(
@@ -17,6 +17,6 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    
   }
-
 }
