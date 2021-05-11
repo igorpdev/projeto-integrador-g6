@@ -1,5 +1,9 @@
 .bg-principal {
+
     background-color: #181829;
+}
+.fundoImg{
+   background-image: url('https://i.imgur.com/jIPxn9p.png');
 }
 
 .fc-principal {
@@ -17,7 +21,12 @@
 .fs-18 {
     font-size: 18px;
 }
-  
+
+.fs-40 {
+    font-size: 40px;
+}
+
+
 .fs-14 {
     font-size: 14px;
 }
@@ -25,8 +34,17 @@
 .caixa {
     background-color: #242434;
     border-radius: 15px;
-    height: 400px;
+    height: 450px;
     width: 800px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.caixa2 {
+    background-color: #242434;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
     display: flex;
     margin-bottom: 20px;
 }
@@ -50,4 +68,5 @@ ul.contato {
     padding: 0;
     margin-left: 4;
     margin-right: 4;
+    font-size: 30pt;
   }
