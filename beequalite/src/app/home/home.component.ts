@@ -17,6 +17,9 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    
+    if(environment.token == '') {
+      alert('Faça login novamente')
+      this.router.navigate(['/'])
+    }
   }
 }
