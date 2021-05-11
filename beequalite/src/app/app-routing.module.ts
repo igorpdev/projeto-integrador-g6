@@ -22,6 +22,7 @@ const routes: Routes = [
   {path: 'inspire-se', component: InspireComponent},
 
   {path: 'home', component: HomeComponent},
+
   {path: 'tema', component: TemaComponent},
 
   {path: 'tema-edit/:id', component: TemaEditComponent},
