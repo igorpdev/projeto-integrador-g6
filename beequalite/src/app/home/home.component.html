@@ -7,11 +7,12 @@
 
       <div class="row d-flex justify-content-center">
         <div class="col-md-12 d-flex justify-content-center p-4">
-          <img src="{{foto}}" alt="Imagem de usuário" width="180px" height="180px" class="img rounded-circle">
+          <img src="{{foto}}" alt="Imagem de usuário" width="180px" height="180px" class="img-fluid rounded-circle">
         </div>
 
         <div class="col-md-12 text-center">
           <p class="fc-principal ff-principal fs-18">{{nome}}</p>
+          <a routerLink='user-edit'><small class="fc-secundaria ff-principal">Editar perfil</small></a>
         </div>
       </div>
 
@@ -19,95 +20,37 @@
     <!--Fim coluna de perfil-->
 
     <!--Coluna das postagens-->
-    <div class="col-md-6 d-flex caixa2 mt-4 ml-2">
+    <div class="col-md-6 d-flex caixa2 mt-4 ml-4">
       <div class="row d-flex justify-content-center">
 
-        <div class="col-md-10 mt-20">
+        <div class="col-md-12 ml-2 mr-2 mt-3">
           <p class="fc-principal ff-principal fs-35">Seja bem vinde!</p>
           <p class="fc-secundaria ff-principal fs-24">Compartilhe com nossa comunidade suas sugestões e experiências.</p>
+
+          <div class="d-flex justify-content-start"><button class="btn btn:hover mr-2" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button></div>
+
+          <div class="col-md-12 ml-2 mr-2 d-flex justify-content-start p-3 mt-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active text-center fc-principal ff-principal" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Todas as postagens</a>
+              <a class="nav-link text-center fc-principal ff-principal" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Minhas postagens</a>
+              <a class="nav-link text-center fc-principal ff-principal" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Postagens por tema</a>
+
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+            </div>
+          </div>
         </div>
 
-        <div class="col-md-10 mb-5">
-          <button class="btn btn:hover mr-5" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
+        <!-- <div class="col-md-12 ml-4 mb-3">
+          <button class="btn btn:hover mr-2" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
           <button class="btn-outline btn-outline:hover">Ver postagens</button>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
 </div>
-
-<!-- <div class="container mb-5 mt-5" id="postagens">
-  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-
-    <li class="nav-item">
-      <a class="nav-link active" id="todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as postagens</a>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link" id="minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas postagens</a>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link" id="postagensTema-tab" data-toggle="tab" href="#postagensTema" role="tab" aria-controls="nav-postagensTema" aria-selected="false">Postagens por tema</a>
-    </li>
-
-  </ul>
-  <div class="tab-content" id="myTabContent">
-
-    <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">Todas as postagens</div>
-
-    <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens">Minhas postagens</div>
-
-    <div class="tab-pane fade" id="postagensTema" role="tabpanel" aria-labelledby="nav-postagensTema">Postagens por tema</div>
-  </div>
-</div> -->
-
-<!-- <div class="container-fluid mb-5 bg-principal" id="postagens">
-    <div class="d-flex justify-content-center">
-      <nav>
-        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
-
-          <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
-
-          <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
-
-          <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab" href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por tema</a>
-
-        </div>
-      </nav>
-
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
-          Todas as postagens
-        </div>
-
-        <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
-          Minhas postagens
-        </div>
-
-        <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
-          Postagens por tema
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-
-
-  <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Perfil</a>
-      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contato</a>
-    </div>
-  </nav>
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">abc</div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">abd2</div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">asads</div>
-  </div>
-
-
 
 
 <!-- Modal -->
