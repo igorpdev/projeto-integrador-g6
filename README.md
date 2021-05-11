@@ -44,6 +44,9 @@ Além da nossa aba de Inspira-se com casos reais de mulheres que estão vencendo
 	- Curiosidades
 	- Dicas
 	- Etc. 
+- [x] Aba de inspiração com casos reais de Mulheres de Sucesso!
+- [x] Nossos contatos
+- [x] Conheça mais da BEEqualité na aba Sobre nós
 
 
 ## 🎨 Layout
@@ -61,6 +64,18 @@ Este projeto é divido em duas partes:
 2. Frontend (ainda em desenvolvimento)
 
 💡 O Frontend precisa que o Backend esteja sendo executado para funcionar.
+
+
+
+## 🛠️ Tecnologias
+
+- [x] IDE: Visual Studio Code, MySQL Workbench, Eclipse IDE, Postman;
+- [x] Linguagem de programação: Java, Javascript, HTML;
+- [x] Linguagem Cascading Style Sheet: CSS;
+- [x] Framework: Bootstrap, Angular.
+
+
+-- BSM: Orientação ao futuro, responsabilidade pessoal, mentalidade de crescimento, persistência, trabalho em equipe, atenção ao detalhe, proatividade e comunicação.
 
 
 
