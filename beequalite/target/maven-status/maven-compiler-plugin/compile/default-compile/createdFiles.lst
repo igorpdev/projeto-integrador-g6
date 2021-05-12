@@ -1,0 +1,16 @@
+com\egaliteSiX\beequalite\security\UserDetailsServiceImpl.class
+com\egaliteSiX\beequalite\repository\TemaRepository.class
+com\egaliteSiX\beequalite\config\SwaggerConfig.class
+com\egaliteSiX\beequalite\security\BasicSecurityConfig.class
+com\egaliteSiX\beequalite\repository\PostagemRepository.class
+com\egaliteSiX\beequalite\controller\PostagemController.class
+com\egaliteSiX\beequalite\model\Tema.class
+com\egaliteSiX\beequalite\repository\UsuarioRepository.class
+com\egaliteSiX\beequalite\service\UsuarioService.class
+com\egaliteSiX\beequalite\security\UserDetailsImpl.class
+com\egaliteSiX\beequalite\BeequaliteApplication.class
+com\egaliteSiX\beequalite\model\Usuario.class
+com\egaliteSiX\beequalite\model\UserLogin.class
+com\egaliteSiX\beequalite\model\Postagem.class
+com\egaliteSiX\beequalite\controller\UsuarioController.class
+com\egaliteSiX\beequalite\controller\TemaController.class
