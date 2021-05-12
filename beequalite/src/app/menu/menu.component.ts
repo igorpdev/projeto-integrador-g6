@@ -17,12 +17,13 @@ export class MenuComponent implements OnInit {
   }
 
   sair() {
-    this.router.navigate(['/entrar'])
-    environment.token = ''
+    this.router.navigate(['/login'])
     environment.foto = ''
     environment.id = 0
     environment.nome = ''
     environment.tipo = ''
+
+    localStorage.removeItem('token')
   }
 
 }

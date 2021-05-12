@@ -1,4 +1,4 @@
-<div class="container-fluid bg-principal">
+<div class="container-fluid bg-principal bgImg">
 
   <div class="row d-flex justify-content-center">
 
@@ -7,11 +7,12 @@
 
       <div class="row d-flex justify-content-center">
         <div class="col-md-12 d-flex justify-content-center p-4">
-          <img src="{{foto}}" alt="Imagem de usuário" width="180px" height="180px" class="img rounded-circle">
+          <img src="{{foto}}" alt="Imagem de usuário" width="180px" height="180px" class="img-fluid rounded-circle">
         </div>
 
         <div class="col-md-12 text-center">
           <p class="fc-principal ff-principal fs-18">{{nome}}</p>
+          <a [routerLink]="['/user-edit', id]"><small class="fc-secundaria ff-principal">Editar perfil</small></a>
         </div>
       </div>
 
@@ -46,7 +47,5 @@
       </div>
     </div>
 </div>
-
-
 
 <!--Fim coluna das postagens-->

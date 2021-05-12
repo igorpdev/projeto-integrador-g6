@@ -24,14 +24,14 @@ export class AuthService {
     return this.http.post<User>('http://localhost:8080/usuarios/cadastro', user)
   }
 
-getByIdUser(id: number): Observable<User>{
-  return this.http.get<User>(`http://localhost:8080/usuarios/${id}`)
-}
+  getByIdUser(id: number): Observable<User>{
+    return this.http.get<User>(`http://localhost:8080/usuarios/${id}`)
+  }
 
-  logado() {
+  logado (){
     let ok: boolean = false
 
-    if(environment.token != '') {
+    if(localStorage.getItem('token') != null) {
       ok = true
     }
     return ok

@@ -26,10 +26,11 @@ export class LoginComponent implements OnInit {
     this.auth.login(this.userLogin).subscribe((resp: UserLogin)=>{
       this.userLogin = resp
 
-      environment.token = this.userLogin.token
       environment.nome = this.userLogin.nome
       environment.foto = this.userLogin.foto
       environment.id = this.userLogin.id
+
+      localStorage.setItem('token', this.userLogin.token)
 
       this.router.navigate(['/home'])
     }, erro =>{

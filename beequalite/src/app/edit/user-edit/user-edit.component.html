@@ -1,0 +1,54 @@
+<div class="container-fluid bg-color fundoImg">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6">
+        <h2 class="titulo">EDITAR PERFIL</h2>
+        <div class="container caixa-form">
+            <div class="form-group">
+                <label for="nome" class="texto">Nome</label>
+                <input [(ngModel)]='user.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="texto">Email</label>
+                <input [(ngModel)]='user.email' class="form-control" type="email" name="email" id="email" placeholder="exemplo@exemplo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="foto" class="texto">Foto</label>
+              <input [(ngModel)]='user.foto' class="form-control" type="text" name="foto" id="foto" placeholder="Link da foto">
+            </div>
+
+            <div class="form-group">
+                <label for="senha" class="texto">Senha</label>
+                <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="********">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmarSenha" class="texto">Confirmar senha</label>
+                <input [(ngModel)]='user.senha' class="form-control" type="password" name="confirmarSenha" id="confirmarSenha" placeholder="********">
+            </div>
+
+            <div class="form-group">
+              <label for="tipo" class="texto">Tipo de usuario</label>
+              <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
+                <option>Selecione um tipo de usuário</option>
+                <option value="normal">Normal</option>
+                <option value="adm">Administrador</option>
+              </select>
+            </div>
+
+            <div class="row align-items-center">
+              <div class="col-6 d-flex mt-2">
+                  <button type="submit" class="btn" (click)='atualizar()'>Atualizar</button>
+              </div>
+
+              <div class="col-6 d-flex justify-content-end mt-2">
+                <button type="submit" class="btn" routerLink='/home'>Cancelar</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+</div>
