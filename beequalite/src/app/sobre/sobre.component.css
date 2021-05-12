@@ -1,19 +1,49 @@
-.bg-color{
-    background-color: #181829;
-  }
-
-.font{
-    color: #ffc62a;
-    font-size: 20pt;
-  }
-
-.bg-container {
-    background-color: #c4c4c4;
-    opacity: 7%;
+.bg-principal {
+  background-color: #181829;
 }
 
-.font-texto{
-    color:black;
-    font-size: 15pt;
-    font-family: 'ubuntu';
+.fc-principal {
+  color: #FFC62A;
+}
+
+.ff-principal {
+  font-family: 'Righteous', sans-serif;;
+}
+
+.caixa {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 250px;
+  width: 800px;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.caixa2 {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 150px;
+  width: 400px;
+  margin-bottom: 20px;
+  margin-left: 270px;
+  display: flex;
+}
+
+.caixa3 {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 290px;
+  width: 400px;
+  margin-bottom: 20px;
+  margin-right: 270px;
+}
+
+.caixa4 {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 120px;
+  width: 400px;
+  margin-bottom: 0px;
+  margin-left: 270px;
+  display: flex;
 }
