@@ -51,6 +51,17 @@
   width: 800px;
   margin-bottom: 20px;
   margin-right: 100px;
+  text-align: justify;
+}
+
+.caixa4 {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 2200px;
+  width: 800px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  text-align: justify;
 }
 
 a {
