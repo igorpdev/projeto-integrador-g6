@@ -9,11 +9,11 @@ import { User } from '../model/User';
 import { AuthService } from '../service/auth.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-modal-postagem',
+  templateUrl: './modal-postagem.component.html',
+  styleUrls: ['./modal-postagem.component.css']
 })
-export class HomeComponent implements OnInit {
+export class ModalPostagemComponent implements OnInit {
 
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]

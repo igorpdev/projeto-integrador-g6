@@ -18,10 +18,35 @@
     </div>
     <!--Fim coluna de perfil-->
 
-    <div class="col-md-8 d-flex caixa2 mt-4 ml-4">
-      <h1>oi</h1>
+    <!--Coluna das postagens-->
+    <div class="col-md-6 d-flex caixa2 mt-4 ml-2">
+      <div class="row d-flex justify-content-center">
+          <div class="col-md-10 mt-20">
+            <p class="fc-principal ff-principal fs-35">Seja bem vinde!</p>
+            <p class="fc-secundaria ff-principal fs-24">Compartilhe com nossa comunidade suas sugestões e experiências.</p>
+          </div>
+
+          <div class="col-md-10 mb-5">
+            <button routerLink="/postagem" class="btn btn:hover mr-5" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
+            <button class="btn-outline btn-outline:hover">Ver postagens</button>
+          </div>
+
+          <h1>Todas as publicações</h1>
+          <div class="card-columns">
+            <div class="card text-center" *ngFor="let item of listaPostagens">
+              <div class="card-body">
+                <h5 class="card-title m-0">{{item.titulo}}</h5>
+                <p class="card-text mb-3"><small class="text-muted">Tema: {{item.tema.descricao}}</small></p>
+                <p class="card-text">{{item.texto}}</p>
+                <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
+                <p class="card-text"><small class="text-muted">por: {{item.usuario.nome}}</small></p>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
-
-  </div>
-
 </div>
+
+
+
+<!--Fim coluna das postagens-->
