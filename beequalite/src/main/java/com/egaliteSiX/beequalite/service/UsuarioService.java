@@ -19,7 +19,7 @@ public class UsuarioService {
     public UsuarioRepository repository;
 
     public Optional<Usuario> CadastroUsuario(Usuario usuario) {
-    	if (repository.findByEmail(usuario.getEmail()).isPresent()) {
+    	if (repository.findByEmail(usuario.getEmail()).isPresent() && usuario.getId() == 0) {
     		return null;
     	}
 

@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
 
   foto = environment.foto
   nome = environment.nome
+  id = environment.id
 
   constructor(
     private router: Router,
@@ -36,7 +37,9 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if(environment.token == ''){
+    window.scroll(0, 0)
+
+    if(localStorage.getItem('token') == null){
       this.router.navigate(['/'])
     }
 
@@ -74,7 +77,7 @@ export class HomeComponent implements OnInit {
 
     this.user.id = this.idUser
     this.postagem.usuario = this.user
-  
+
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
       this.postagem = resp
       alert('Postagem realizada com sucesso!')
