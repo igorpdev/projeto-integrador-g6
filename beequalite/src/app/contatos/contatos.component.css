@@ -1,0 +1,72 @@
+.bg-principal {
+
+    background-color: #181829;
+}
+.fundoImg{
+   background-image: url('https://i.imgur.com/jIPxn9p.png');
+}
+
+.fc-principal {
+    color: #FFC62A;
+}
+
+.fc-secundaria {
+    color: #FFEB99;
+}
+
+.ff-principal {
+    font-family: 'Righteous', sans-serif;;
+}
+  
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.caixa {
+    background-color: #242434;
+    border-radius: 15px;
+    height: 450px;
+    width: 800px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.caixa2 {
+    background-color: #242434;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.fa-linkedin:hover {
+    color: #FFC62A;
+  }
+
+.fa-github-alt:hover {
+    color: #FFC62A;
+  }
+
+.img-radius{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+ul.contato {
+    list-style: none;
+    padding: 0;
+    margin-left: 4;
+    margin-right: 4;
+    font-size: 30pt;
+  }
