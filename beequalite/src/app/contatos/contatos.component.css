@@ -2,9 +2,6 @@
 
     background-color: #181829;
 }
-.fundoImg{
-   background-image: url('https://i.imgur.com/jIPxn9p.png');
-}
 
 .fc-principal {
     color: #FFC62A;
@@ -69,4 +66,20 @@ ul.contato {
     margin-left: 4;
     margin-right: 4;
     font-size: 30pt;
+}
+
+.fundoImg{
+    background-image: url('https://i.imgur.com/jIPxn9p.png');
+    background-repeat: no-repeat; 
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: fixed;
+    right: 0;
+    top: 80;
+    background-size: cover;
   }
+  
