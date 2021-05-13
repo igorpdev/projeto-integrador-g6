@@ -25,21 +25,17 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/usuarios")
 public class UsuarioController {
-    
-    @Autowired 
+
+    @Autowired
     private UsuarioRepository repository;
 
-    @Autowired 
+    @Autowired
     private UsuarioService service;
 
 	/*
 	 * @GetMapping public ResponseEntity<List<Usuario>> getAll() { return
 	 * ResponseEntity.ok(repository.findAll()); }
-	 * 
-	 * @GetMapping("/{id}") public ResponseEntity<Usuario> getById(@PathVariable
-	 * long id) { return repository.findById(id).map(resp ->
-	 * ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build()); }
-	 * 
+	 *
 	 * @GetMapping("/nome/{nome}") public ResponseEntity<Optional<Usuario>>
 	 * getByNome(@PathVariable String nome) { return
 	 * ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome)); }
@@ -49,6 +45,11 @@ public class UsuarioController {
     //public ResponseEntity<Usuario> post(@RequestBody Usuario usuario) {
      //   return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(usuario));
     //}
+
+    @GetMapping("/{id}") public ResponseEntity<Usuario> getById(@PathVariable long id) {
+      return repository.findById(id).map(resp ->
+      ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+    }
 
     @PostMapping("/cadastro")
     public ResponseEntity<Usuario> post(@RequestBody Usuario usuario) {
@@ -60,7 +61,7 @@ public class UsuarioController {
             return ResponseEntity.badRequest().build();
         }
     }
-    
+
     @PostMapping("/login")
     public ResponseEntity<UserLogin> Autentication(@RequestBody Optional<UserLogin> user){
     	return service.Login(user).map(resp -> ResponseEntity.ok(resp))
@@ -70,7 +71,7 @@ public class UsuarioController {
 	/*
 	 * @PutMapping public ResponseEntity<Usuario> put(@RequestBody Usuario usuario)
 	 * { return ResponseEntity.ok(repository.save(usuario)); }
-	 * 
+	 *
 	 * @DeleteMapping("/{id}") public void delete(@PathVariable long id) {
 	 * repository.deleteById(id); }
 	 */
