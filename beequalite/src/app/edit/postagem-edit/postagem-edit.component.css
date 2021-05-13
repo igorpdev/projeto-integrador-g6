@@ -1,0 +1,126 @@
+.bg-principal {
+  background-color: #181829;
+}
+
+.bg-secundaria {
+  background-color: #242434;
+}
+
+.fc-principal {
+  color: #FFC62A;
+}
+
+.fc-secundaria {
+  color: #FFEB99;
+}
+
+.ff-principal {
+  font-family: 'Righteous', sans-serif;;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.caixa {
+  background-color: #242434;
+  border-radius: 15px;
+  height: 450px;
+  width: 450px;
+  margin-bottom: 20px;
+  display: block;
+  justify-content: center;
+}
+
+.card {
+  background-color: #181829;
+  border-radius: 15px;
+  height: auto;
+  width: 250;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.btn-outline {
+  background-color: #FFEB99;
+  border-radius: 25px;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-family: 'Righteous', sans-serif;
+  color: #242434;
+  border-style: solid;
+  border-color: #FFEB99;
+  border-width: 2px;
+}
+
+.btn-danger-css{
+  background-color: #ff2a2a;
+  border-radius: 25px;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-family: 'Righteous', sans-serif;
+  color: #fff;
+  border-style: solid;
+  border-color: #ff4a2a;
+  border-width: 2px;
+}
+
+.btn-danger-css:hover{
+  background-color: #e95757;
+
+}
+
+.mt-10 {
+  margin-top: 3rem;
+}
+
+.ml-6 {
+  margin-left: 4rem;
+}
+
+.mb-10 {
+  margin-bottom: 4.6rem;
+}
+
+input[type=text] {
+  border-radius: 25px;
+  border: 2px solid #FFC62A;
+  background-color: #242434;
+  font-family: 'Righteous', sans-serif;
+}
+
+textarea {
+  border-radius: 25px;
+  border: 2px solid #FFC62A;
+  background-color: #242434;
+  font-family: 'Righteous', sans-serif;
+}
+
+select {
+  border-radius: 25px;
+  border: 2px solid #FFC62A;
+  background-color: #242434;
+  font-family: 'Righteous', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select:focus {
+  border-radius: 25px;
+  border: 2px solid #FFC62A;
+  background-color: #242434;
+  font-family: 'Righteous', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
