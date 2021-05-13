@@ -1,10 +1,15 @@
 .bg-principal {
   background-color: #181829;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
 
 .bg-secundaria {
   background-color: #242434;
+}
+
+.bg-amarelo{
+  background-color: #FFEB99;
 }
 
 .fc-principal {
@@ -16,7 +21,12 @@
 }
 
 .ff-principal {
-  font-family: 'Righteous', sans-serif;;
+  font-family: 'Righteous', sans-serif;
+}
+
+.corpotext{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .fs-18 {
@@ -45,6 +55,15 @@
   margin-bottom: 20px;
 }
 
+.card {
+  background-color: #242434;
+  border-radius: 15px;
+  height: auto;
+  width: auto;
+  display: flex;
+  margin-bottom: 10px;
+}
+
 .btn {
   background-color: #FFC62A;
   border-radius: 25px;
@@ -57,6 +76,26 @@
   border-style: solid;
   border-color: #FFC62A;
   border-width: 2px;
+}
+
+.btn-danger-css{
+  background-color: #ff2a2a;
+  border-radius: 25px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-family: 'Righteous', sans-serif;
+  color: #fff;
+  border-style: solid;
+  border-color: #ff4a2a;
+  border-width: 2px;
+}
+
+.btn-danger-css:hover{
+  background-color: #e95757;
+
 }
 
 .btn-outline {
@@ -104,4 +143,20 @@
 
 .mt-20{
   margin-top: 5rem;
+}
+
+.nav-css{
+  font-family: 'Righteous', sans-serif;
+  font-size: 18px;
+  color: #FFC62A;
+  font: bold;
+  background-color: #242434;
+}
+
+.nav-css:hover{
+  background-color: #FFEB99;
+}
+
+.nav-tabs{
+  border: none;
 }
