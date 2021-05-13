@@ -20,7 +20,7 @@ export class TemaEditComponent implements OnInit {
   ) {  }
 
   ngOnInit(){
-    if(environment.token ==''){
+    if(localStorage.getItem('token') == null){
       this.router.navigate(['/login'])
     }
     let id= this.route.snapshot.params['id']

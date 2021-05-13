@@ -1,23 +1,33 @@
-<div class="container mb-5 mt-5">
-    <div class="row mb-5">
-        <div class="col-md-12">
-            <h1 class="text-center text-secondary">Apagar tema</h1>
+<div class="container-fluid bg-principal bg-colmeia mb-0">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container caixa3 ">
+        <div class="row ">
+            
+            <div class="col-md-12">
+                <h1 class="text-center fc-principal ff-principal ">Apagar tema</h1>
+            </div>
+        
         </div>
-    </div>
-    <div class="row mb-3">
-        <div class="col-md-12">
-            <h4 class="text-center text-secondary">Você tem certeza que deseja apagar esse tema? Todas as postagens relacionadas a ele serão igualmente apagadas.</h4>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <h4 class="text-center fc-principal ff-principal">Você tem certeza que deseja apagar esse tema? Todas as
+                    postagens relacionadas a ele serão igualmente apagadas.</h4>
+            </div>
         </div>
-    </div>
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <h5 class="text-center text-primary">Tema:{{tema.descricao}}</h5>
+        <div class="row mb-1 ml-9">
+            <div class="col-md-7 ">
+                <h5 class=" fc-principal ff-principal form-control textarea text-center">Tema:{{tema.descricao}}</h5>
+            </div>
         </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-12">
-            <button class="btn btn-danger mr-4" routerLink='/tema'>Não</button>
-            <button class="btn btn-success" (click)='apagar()'>Sim</button>
+        <div class="row d-flex justify-content-center">
+            <div class="mb-4">
+                <button class="btn mr-5" routerLink='/tema'>Não</button>
+                <button class="btn btnc " (click)='apagar()'>Sim</button>
+                
+            </div>
         </div>
     </div>
 </div>
