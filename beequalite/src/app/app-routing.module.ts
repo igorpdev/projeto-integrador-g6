@@ -13,9 +13,6 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 
-import { ModalPostagemComponent } from './modal-postagem/modal-postagem.component';
-/* import { PostagemService } from './service/postagem.service'; */
-
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
@@ -34,8 +31,6 @@ const routes: Routes = [
   {path: 'postagem-edit/:id', component: PostagemEditComponent},
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
   {path: 'user-edit/:id', component: UserEditComponent},
-
-  {path: 'postagem', component: ModalPostagemComponent}
 ];
 
 @NgModule({
