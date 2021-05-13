@@ -6,6 +6,10 @@ a {
   cursor: pointer;
 }
 
+ul li a:focus {
+  color: #FFEB99;
+}
+
 .bg-color{
   background-color: #11111d;
 }
@@ -15,7 +19,7 @@ a {
 }
 
 .ff-principal {
-  font-family: 'Righteous', sans-serif;;
+  font-family: 'Righteous', sans-serif;
 }
 
 ul li a {
@@ -23,5 +27,8 @@ ul li a {
 }
 
 ul li a:hover {
-  color: white;
+  color: #FFEB99;
+  text-decoration: none;
 }
+
+
