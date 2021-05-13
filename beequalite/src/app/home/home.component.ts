@@ -30,6 +30,9 @@ export class HomeComponent implements OnInit {
   nome = environment.nome
   id = environment.id
 
+  key = 'data'
+  reverse = true
+
   constructor(
     private router: Router,
     private postagemService: PostagemService,
