@@ -14,3 +14,8 @@
   top: 80;
   background-size: cover;
 }
+
+html
+{
+  scroll-behavior: smooth;
+}
