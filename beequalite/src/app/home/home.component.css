@@ -170,7 +170,7 @@
   left: 0;
   overflow: auto;
   padding: 3em;
-  position: fixed;
+  position: static;
   right: 0;
   top: 80;
   background-size: cover;
