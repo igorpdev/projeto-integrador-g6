@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   tema: Tema = new Tema
   listaTemas: Tema[]
   idTema: number
-  nomeTema: string
+  descricaoTema: string
 
   user: User = new User
   idUser = environment.id
@@ -101,14 +101,14 @@ export class HomeComponent implements OnInit {
       this.postagemService.getByTituloPostagem(this.tituloPost).subscribe((resp: Postagem[])=>{
         this.listaPostagens = resp
       })
-    }  
+    }
   }
 
-  findByNomeTema(){
-    if(this.nomeTema == ''){
+  findByDescricaoTema(){
+    if(this.descricaoTema == ''){
       this.getAllTema()
     } else {
-      this.temaService.getByNomeTema(this.nomeTema).subscribe((resp: Tema[])=>{
+      this.temaService.getByDescricaoTema(this.descricaoTema).subscribe((resp: Tema[])=>{
         this.listaTemas = resp
       })
     }

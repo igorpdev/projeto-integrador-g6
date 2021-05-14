@@ -59,9 +59,22 @@
   background-color: #242434;
   border-radius: 15px;
   height: auto;
-  width: auto;
-  display: flex;
+  width: 100%;
   margin-bottom: 10px;
+  min-height: 200px;
+  min-width: 50px;
+  max-height: auto;
+  padding-bottom: 20px;
+  justify-content: center;
+  color: #FFC62A;
+  font-family: 'Righteous', sans-serif;
+  border-color: #FFC62A;
+}
+
+.card-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
 .btn {
@@ -174,4 +187,38 @@
   right: 0;
   top: 80;
   background-size: cover;
+}
+
+input[type=text] {
+  border-radius: 25px;
+  border: 2px solid #FFC62A;
+  background-color: #242434;
+  font-family: 'Righteous', sans-serif;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+textarea {
+  border-radius: 25px;
+  border: 2px solid #FFC62A;
+  background-color: #242434;
+  font-family: 'Righteous', sans-serif;
+}
+
+select {
+  border-radius: 25px;
+  border: 2px solid #FFC62A;
+  background-color: #242434;
+  font-family: 'Righteous', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select:focus {
+  border-radius: 25px;
+  border: 2px solid #FFC62A;
+  background-color: #242434;
+  font-family: 'Righteous', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
