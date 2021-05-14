@@ -77,6 +77,11 @@
   border-radius: 50%;
 }
 
+a:hover {
+  color: #FFEB99;
+  text-decoration: none;
+}
+
 .btn {
   background-color: #FFC62A;
   border-radius: 25px;
@@ -108,7 +113,6 @@
 
 .btn-danger-css:hover{
   background-color: #e95757;
-
 }
 
 .btn-outline {
@@ -116,8 +120,8 @@
   border-radius: 25px;
   padding-left: 75px;
   padding-right: 75px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   text-align: center;
   font-family: 'Righteous', sans-serif;
   color: #242434;
@@ -132,6 +136,7 @@
 
 .btn-outline:hover {
   background-color: #FFC62A;
+  color: #181829;
 }
 
 .fc-principal {
@@ -158,6 +163,11 @@
   margin-top: 5rem;
 }
 
+html
+{
+  scroll-behavior: smooth;
+}
+
 .nav-css{
   font-family: 'Righteous', sans-serif;
   font-size: 18px;
@@ -176,14 +186,14 @@
 
 .fundoImg{
   background-image: url('https://i.imgur.com/jIPxn9p.png');
-  background-repeat: no-repeat;
-  background-size:10%;
+  background-repeat: no-repeat; 
+  background-size:100%;
   bottom: 0;
   color: black;
   left: 0;
   overflow: auto;
   padding: 3em;
-  position: static;
+  position: absolute;
   right: 0;
   top: 80;
   background-size: cover;
