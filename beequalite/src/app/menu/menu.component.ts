@@ -1,3 +1,4 @@
+import { AlertasService } from 'src/app/service/alertas.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
@@ -10,7 +11,8 @@ import { environment } from 'src/environments/environment.prod';
 export class MenuComponent implements OnInit {
 
   constructor(
-    private router: Router
+    private router: Router,
+    private alertas: AlertasService
   ) { }
 
   ngOnInit() {
@@ -22,8 +24,9 @@ export class MenuComponent implements OnInit {
     environment.id = 0
     environment.nome = ''
     environment.tipo = ''
-
     localStorage.removeItem('token')
+
+    this.alertas.showAlertSuccess('Usuário deslogado com sucesso, volte sempre!')
   }
 
 }

@@ -1,3 +1,4 @@
+import { AlertasService } from 'src/app/service/alertas.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from './../../service/auth.service';
 import { User } from './../../model/User';
@@ -20,7 +21,8 @@ export class UserEditComponent implements OnInit {
   constructor(
     private auth: AuthService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private alertas: AlertasService
   ) { }
 
   ngOnInit() {
@@ -46,12 +48,12 @@ export class UserEditComponent implements OnInit {
     this.user.tipo = this.tipoUsuario
 
     if (this.user.senha != this.confirmarSenha) {
-      alert('As senhas não correspondem')
+      this.alertas.showAlertDanger('As senhas não correspondem')
     } else {
       this.auth.cadastrar(this.user).subscribe((resp: User) => {
         this.user = resp
         this.router.navigate(['/login'])
-        alert('Usuário cadastrado com sucesso!')
+        this.alertas.showAlertSuccess('Usuário atualizado com sucesso!')
       })
     }
   }
