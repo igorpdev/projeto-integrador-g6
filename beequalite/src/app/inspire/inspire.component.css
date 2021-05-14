@@ -94,3 +94,18 @@ ul.contato {
 .ml-9 {
   margin-left: 9rem;
 }
+
+.fundoImg{
+  background-image: url('https://i.imgur.com/jIPxn9p.png');
+  background-repeat: no-repeat; 
+  background-size:100%;
+  bottom: 0;
+  color: black;
+  left: 0;
+  overflow: auto;
+  padding: 3em;
+  position: fixed;
+  right: 0;
+  top: 80;
+  background-size: cover;
+}

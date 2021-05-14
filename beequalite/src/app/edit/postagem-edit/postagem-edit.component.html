@@ -1,1 +1,38 @@
-<p>postagem-edit works!</p>
+<div class="container-fluid bg-principal fundoImg">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center ff-principal fc-principal mt-5 mb-2">Atualizar postagem</h1>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6 caixa mb-10">
+
+      <div class="form-group ff-principal fc-principal mt-5">
+        <label for="titulo" class="ml-3">Título</label>
+        <input [(ngModel)]="postagem.titulo" type="text" class="form-control" id="titulo" placeholder="Digite o título">
+      </div>
+
+      <div class="form-group ff-principal fc-principal">
+        <label for="texto" class="ml-3">Texto</label>
+        <textarea [(ngModel)]="postagem.texto" class="form-control" name="texto" id="texto" rows="3"></textarea>
+      </div>
+
+      <div class="form-group ff-principal fc-principal">
+        <label for="tema" class="ml-3">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um novo</a> </label>
+        <select name="tema" id="tema" class="form-control" [(ngModel)]="idTema" (change)='findByIdTema'>Tema
+          <option *ngFor='let item of listaTemas' value="{{item.id}}">{{item.descricao}}</option>
+        </select>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-danger-css" routerLink='/home'>Cancelar</button>
+        <button type="button" class="btn btn-outline ml-4" (click)='atualizar()'>Atualizar</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
