@@ -42,7 +42,6 @@
   border-radius: 15px;
   height: 400px;
   width: 15%;
-  display: flex;
   margin-bottom: 20px;
 }
 
@@ -51,7 +50,6 @@
   border-radius: 15px;
   height: 400px;
   width: 60%;
-  display: flex;
   margin-bottom: 20px;
 }
 

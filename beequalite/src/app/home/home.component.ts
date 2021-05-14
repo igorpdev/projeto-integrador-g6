@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
     window.scroll(0, 0)
 
     if(localStorage.getItem('token') == null){
-      this.router.navigate(['/'])
+      this.router.navigate(['/login'])
     }
 
     this.getAllTema()
