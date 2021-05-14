@@ -1,6 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-  
- 
-
-
+.fundoImg{
+  background-image: url('https://i.imgur.com/jIPxn9p.png');
+  background-repeat: no-repeat;
+  background-size:10%;
+  bottom: 0;
+  color: black;
+  left: 0;
+  overflow: auto;
+  padding: 3em;
+  position: absolute;
+  right: 0;
+  top: 80;
+  background-size: cover;
+}

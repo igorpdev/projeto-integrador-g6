@@ -4,33 +4,33 @@
     height: auto;
     /* position: relative;
     background-size: cover; */
-    
+
   }
-  
+
   .bg-secundaria {
     background-color: #242434;
   }
-  
+
   .fc-principal {
     color: #FFC62A;
   }
-  
+
   .fc-secundaria {
     color: #FFEB99;
   }
-  
+
   .ff-principal {
     font-family: 'Righteous', sans-serif;;
   }
-  
+
   .fs-18 {
     font-size: 18px;
   }
-  
+
   .fs-14 {
     font-size: 14px;
   }
-  
+
   .caixa {
     background-color: #242434;
     border-radius: 15px;
@@ -39,7 +39,7 @@
     display: flex;
     margin-bottom: 20px;
   }
-  
+
   .caixa2 {
     background-color: #242434;
     border-radius: 15px;
@@ -48,51 +48,51 @@
     margin-bottom: 20px;
     margin-left: 100px;
   }
-  
+
   .caixa3 {
     background-color: #242434;
-    border-radius: 15px; 
+    border-radius: 15px;
     height: auto;
     width: auto;
     margin-bottom: 20px;
     justify-items: auto;
-    
+
   }
-  
+
   a {
     cursor: pointer;
   }
-  
+
   ul.contato {
     list-style: none;
     padding: 0;
   }
-  
+
   .fab {
     font-size: 30pt;
     color: #0e76a8;
     padding: 10px;
   }
-  
+
   .fa-linkedin:hover {
     color: #FFC62A;
   }
-  
+
   .mt-7 {
     margin-top: 7.5rem;
   }
-  
+
   .ml-6 {
     margin-left: 6.5rem;
   }
-  
+
   .ml-9 {
     margin-left: 9rem;
   }
 
   .bg-colmeia{
     background-image: url(https://imgur.com/fyMOBfj.png);
-    
+
   }
 
   .caixa-form {
@@ -115,23 +115,21 @@ input[type=text] {
 .btn {
     background-color: #FFC62A;
     border-radius: 25px;
-    padding-left: 27px;
-    padding-right: 27px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     text-align: center;
     font-family: 'Righteous', sans-serif;
-    
-    
 }
 
-.btnc{
+.btn-danger{
   background-color: #ff2a2a;
   border-radius: 25px;
-  padding-left: 27px;
-  padding-right: 27px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   text-align: center;
   font-family: 'Righteous', sans-serif;
 }

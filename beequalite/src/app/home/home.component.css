@@ -183,7 +183,7 @@
   left: 0;
   overflow: auto;
   padding: 3em;
-  position: static;
+  position: absolute;
   right: 0;
   top: 80;
   background-size: cover;
